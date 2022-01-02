@@ -5,7 +5,7 @@ const widthEl = document.getElementById("chatcontainerbox")
 
 
 function blurEffect() {
-    if (widthEl.offsetWidth < 382) {
+    if (widthEl.offsetWidth < 312) {
         widthEl.style.filter = "blur(2px) brightness(70%)"
     }else {
         widthEl.style.filter = "none"
@@ -18,7 +18,7 @@ function blurEffect() {
 function reportWindowSize () {
     
     window.addEventListener('resize' , reportWindowSize)
-    if ( reportWindowSize < 382) {
+    if ( reportWindowSize < 312) {
         widthEl.style.filter = "blur(1px) brightness(70%)"
     }else {
         widthEl.style.filter = "none"
@@ -27,7 +27,7 @@ function reportWindowSize () {
     let sizeMath = widthEl.offsetWidth
     console.log(widthEl.offsetWidth)
 
-    if (sizeMath < 382) {
+    if (sizeMath < 312) {
         widthEl.style.filter = "blur(2px) brightness(70%)"
     }else {
         widthEl.style.filter = "none"
